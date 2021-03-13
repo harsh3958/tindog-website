@@ -63,6 +63,9 @@ body{
 
 /* Features */
 
+#features{
+  margin: 50px auto;
+
 .features-text{
   text-align: center;
   margin: 50px auto;
