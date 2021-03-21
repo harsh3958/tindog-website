@@ -1,8 +1,14 @@
 h1{
   font-weight: 900;
-  font-size: 2.7rem;
+  font-size: 3.4rem;
   line-height: 1.5;
   margin-right: 0;
+}
+
+h2{
+  font-weight: 900;
+  font-size: 2.7rem;
+  line-height: 1.5;
 }
 
 h3{
@@ -16,13 +22,19 @@ p{
 body{
   font-family: 'Montserrat', sans-serif;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 #title{
   background-color: #ff4c68;
   color: white;
 }
 
 .container-fluid{
-  padding: 7% 13%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -33,7 +45,7 @@ body{
 
 .navbar-brand{
   font-family: "Ubuntu", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -46,6 +58,7 @@ body{
   font-weight: 300;
 }
 
+
 /* Download buttons */
 
 .download-button{
@@ -57,14 +70,51 @@ body{
 .iphone{
   transform: rotate(25deg);
   margin : auto;
-  display:block;
+  position : absolute;
+  right: 30%;
   width: 60%;
+}
+
+@media (max-width : 992px){
+  #title{
+    text-align: center;
+  }
+  .iphone{
+    transform: rotate(0);
+    position: static;
+  }
+}
+
+@media (max-width: 1258px) and (min-width: 1118px){
+  h1{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1118px) and (min-width: 993px){
+  h1{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 616px){
+  h1{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 545px){
+  h1{
+    font-size: 2.5rem;
+  }
 }
 
 /* Features Section*/
 
 #features{
-  margin: 50px auto;
+  padding : 7% 15%;
+  background-color: white;
+  position: relative;
 }
 
 .features-text{
@@ -76,10 +126,88 @@ body{
 .features-icons{
   color: #ef8172;
   font-size: 3.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 
 }
 
 .features-icons:hover{
   color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials{
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+.testimonial-img{
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.prevlink{
+  position: relative;
+  bottom: 20%;
+
+}
+
+.nextlink{
+  position: relative;
+  bottom: 20%;
+}
+
+/* Pricing Section */
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-card{
+  padding: 3% 2%;
+}
+
+#cta{
+  background-color: #ff4c68;
+  color: white;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.final-text{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+@media (max-width: 545px){
+  .final-text{
+    font-size: 2.5rem;
+  }
+}
+
+#footer{
+  text-align: center;
+  padding: 7% 15% 3%;
+}
+
+.footer-icons{
+  padding: 3% 1%;
 }
